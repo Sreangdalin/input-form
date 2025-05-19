@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'moul';
+    src: url(/Moul-Regular.ttf);
+}
+@font-face {
+    font-family: 'battambang';
+    src: url(/Battambang-Regular.ttf);
+}
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+.body{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.header{
+    width: 100%;
+    height: 230px;
+}
+.content{
+    margin: 15px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.logo{
+    margin-top:50px;
+    text-align: center;  
+    font-family: 'moul', sans-serif;
+    line-height: 30px;
+}
+img {
+    padding: 1px;
+    width: 100px;
+    line-height: 9px;
+}
+.title{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'moul';
+}
+.text-right{
+    text-align: right;
+    display: block;
+    font-size: 13px;
+    line-height: 35px;
+    margin-top: 5px;
+}
+.text-left{
+    text-align: left;
+    padding-left: 9px;
+    line-height: 30px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    
+}
+input{  
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 2px;
+    outline: none;
+    width: 90%;
+    border: none;
+    border-bottom: #000000 solid 1px;
+    font-family: 'battambang', sans-serif;
+    font-size: 14px;
+}
+input:focus{
+    outline: none;
+    border-color:none; 
+}
+input#text5-3,input#text5-2,input#text5-1,input#text3-2,input#text3-3,input#text4-1,input#text4-2,input#text4-3{
+    line-height: 33px;
+}
+.underline{
+    text-decoration: underline;
+    font-size: 16px;
+}
+label{
+    font-size: 14px;
+    font-family: 'moul', sans-serif;
+}
+label#text4-1,label#text5-1{
+    line-height: 58px;
+}
+.add,.add1{
+    line-height: 33px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.date{
+    text-align: center;
+    font-family: 'battambang';
+    font-size: 16px;
+    line-height: 30px;
+}
+table#show2,table#show1{        
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(223, 238, 255);
+    border: rgb(0, 19, 61);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 105px;
+    height: 25px;
+}
+button:hover{
+    background-color: rgb(0, 4, 81);
+    color: white;
+}
+p,p#output,p#output2,p#output3-1,p#output3-2,p#output3-3,p#output4-1,p#output4-2,p#output4-3,p#output5-1,p#output5-2,p#output5-3{
+    font-size: 14px;
+    padding-left: 2px;
+    padding-top: 0;
+    margin-top: 0;
+    border-bottom: #000000 solid 1px;
+    line-height: 33px;
+    font-family: 'battambang', sans-serif;
+}
+
+  @media only screen and (max-width:1316px) {
+    form , .header, .content, .footer,.text-left {
+      width: 100%;
+    }
+    .grid-container {
+        display:block;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .text-right{
+        text-align: left;
+    }
+    
+  }
+  @media  only screen and (max-width: 1212px) {
+    .footer{
+        grid-template-columns: 1.5fr 4fr;
+        display: grid;
+    }
+    .logo{
+        margin: 0;
+        margin-top: 40px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+  }
+  @media screen and (max-width: 935px) {
+    .footer{
+        grid-template-columns: 1fr;
+    }
+    
+  }
+  @media screen and (max-width:580px) {
+    label,input,.logo,.text-left,.text-right,.title,.date{
+        font-size: 13px;
+    }
+  }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./slyte.css">
+</head>
+<body>
+    <div class="container">
+        <div class="body">
+            <div class="header">
+                <div class="grid">
+                    <div>
+                        <div class="logo">
+                            <img src="/7601336.PNG" alt="">
+                            <div>ធនាគារជាតិនៃកម្ពុជា<br>នាយកដ្ឋានព័ត៌មានវិទ្យា</div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div>
+                        <div class="logo">ព្រះរាជាណាចក្រកម្ពុជា<br>ជាតិ​ សាសនា​ ព្រះមហាក្សត្រ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="title">ប័ណ្ណស្នើ</div>
+            </div>
+            <form id="formupdate" action="./output.html" method="get">
+                <div class="grid-container">
+                    <div class="text-right">
+                        <label for="text1" class="underline">គោរពជូន​ :</label>
+                    </div>
+                    <div class="text-left">  
+                        <input id="text1">
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="text-right">
+                        <label for="text2"class="underline">តាមរយៈ</label>
+                    </div>
+                    <div class="text-left">
+                        <input id="text2">
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="text-right">
+                        <label for="text3-1" class="underline">កម្មវត្ថុ :</label>
+                    </div>
+                    <div class="text-left">
+                        <input id="text3-1">
+                        <input id="text3-2">
+                        <input id="text3-3">
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="text-right">
+                        <label for="text4-1" id="text4-1">មតិរបស់លោកនាយកខុទ្ទកាល័យ :</label><br>
+                        
+                    </div>
+                    <div class="text-left">
+                        <input id="text4-1">
+                        <input id="text4-2">
+                        <input id="text4-3">
+                        <table id ="show2"></table>
+                    </div>
+                    <div>
+                        <div class="text-right">
+                            <button type ="button" onclick="addrow(event)">​បន្ថែមបន្ទាត់</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="text-right">
+                        <label for="text5-1" id="text5-1">មតិរបស់លោកស្រីប្រធាននាយកដ្ឋាន :</label><br>
+                    </div>
+                    <div class="text-left">
+                        <input id ="text5-1">
+                        <input id ="text5-2">
+                        <input id ="text5-3">
+                        <table id ="show1"></table>
+                    </div>
+                    <div>
+                        <div class="text-right">
+                            <button type ="button" onclick ="addrow1(event)">​បន្ថែមបន្ទាត់</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div> </div>
+                    <div>
+                        <div class="date">
+                        <br>ថ្ងៃ​ចន្ទ ១រោច ខែ​ពិសាខ ឆ្នាំម្សាញ់ សប្តស័ក​ ពុទ្ធសករាជ ២៥៦៩
+                        <br>រាជធានីភ្នំពេញ ថ្ងៃទី១២​ ខែឩសភា ឆ្នាំ២០២៥ 
+                        <br>ការិយាល័យរដ្ឋបាល
+                        </div>
+                    </div>
+                    <br><br><br><br>
+    
+                </div>
+                <div class ="grid-container">
+                    <div class ="text-right"><br><br><button type="button" onclick ="saveData()"> បញ្ជូន</button></div>
+                </div>
+            </form>
+            <br>
+        </div>
+    </div>
+    <script src="./get.js"></script>
+</body>
+</html>
